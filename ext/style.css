@@ -1,0 +1,158 @@
+body {
+	margin: 0;
+    font-family: Lucida Grande,Verdana,Tahoma,Arial,Sans-Serif,Lucida Sans;
+    background: #f5f5f5;
+}
+header {
+	background: #5d80a6;
+    color: #fff;
+    overflow: hidden;
+    font-weight: bold;
+}
+header div {
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+header .button {
+	background: url(img/back.png) no-repeat 10px;
+}
+header .button:hover {
+	background-color: rgba(0,0,0,0.3);
+	cursor: pointer;
+}
+.hide {
+	display: none;
+}
+.dialog {
+    padding: 5px 5px 5px 42px;
+    border-top: 1px solid rgba(86, 124, 164, 0.15);
+    overflow: hidden;
+}
+.contacts .dialog {
+    cursor: pointer;
+}
+.contacts .dialog:hover, .history .dialog.unread {
+    border-color: rgba(86, 124, 164, 0.22);
+    background: rgba(86, 124, 164, 0.1);
+}
+.contacts .dialog:hover + .dialog, .history .dialog.unread + .dialog {
+    border-color: rgba(86, 124, 164, 0.22);
+}
+
+.ava {
+    float: left;
+    margin-right: 5px;
+    margin-left: -37px;
+}
+.ava img {
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+}
+.dialog > b {
+    line-height: 32px;
+    color: #2B587A;
+}
+.online b:after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: url(img/profile_icons.png) no-repeat left;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.online.mobile b:after {
+    background: url(img/profile_icons.png) no-repeat right;
+}
+.dialog.write b:after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 11px;
+    background: url(img/typing.gif) no-repeat center;
+    vertical-align: middle;
+    margin-left: 5px;
+    border-radius: 0;
+}
+.dialog:before {
+    content: attr(data-unread);
+    float: right;
+    background-color: rgba(86, 124, 164, 0.2);
+    color: rgba(86, 124, 164, 1);
+    line-height: 25px;
+    padding: 0 5px;
+    border-radius: 3px;
+    margin: 4.5px 0;
+}
+
+
+
+.history {
+	word-wrap: break-word;
+}
+.history .dialog {
+}
+.history .dialog.unread {
+	border-color: rgba(86, 124, 164, 0.22);
+    background: rgba(86, 124, 164, 0.1);
+}
+
+.history .dialog > b {
+	line-height: 1;
+	display: block;
+	margin-bottom: 1px;
+}
+
+.date {
+	font-size: .92em;
+	float: right;
+    color: #777;
+}
+
+.header .user {
+	background-color: #f7f7f7;
+    color: #606060;
+    padding: 5px;
+}
+.header .create_message {
+	background-color: #e4e8ed;
+    padding: 5px;
+}
+.header .create_message textarea {
+	width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 40px;
+    border: 1px solid #d1d7de;
+    border-radius: 4px;
+    padding: 3px;
+    font-family: Lucida Grande,Verdana,Tahoma,Arial,Sans-Serif,Lucida Sans;
+}
+.header .create_message button {
+    padding: 8px 16px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #6182aa;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.header .create_message textarea:focus,  .header .create_message button:focus {
+	outline: none;
+}
+
+ .header .create_message button:active {
+ 	padding-top: 9px;
+ 	padding-bottom: 7px;
+ }
+ .header .create_message button:disabled {
+    background: url(img/wupload.gif) no-repeat center #6182aa;
+ 	cursor: wait;
+ }
+ .header .create_message button:disabled > span {
+ 	opacity: 0;
+ }

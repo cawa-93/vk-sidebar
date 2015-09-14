@@ -1,0 +1,26 @@
+{
+  "description": "Vk",
+  "icons": {
+    "128": "icons/128.png",
+    "38": "icons/38.png"
+  },
+  "manifest_version": 2,
+  "name": "Vk",
+  "sidebar_action": {
+    "default_icon": {
+      "38": "icons/38.png"
+    },
+    "default_panel": "sidebar.html",
+    "default_title": "Vk"
+  },
+  "version": "1.0.0",
+  "permissions": [
+    "*://vk.com/",
+    "*://vk.com/*",
+    "*://*.vk.com/*",
+    "background",
+    "storage",
+    "alarms",
+    "tabs"
+  ]
+}
